@@ -1,0 +1,94 @@
+=== Creating an archetype
+
+[source,text]
+----
+~/00_temp/repos/throwawayexamples/myNewRepo$
+~/00_temp/repos/throwawayexamples/myNewRepo$
+~/00_temp/repos/throwawayexamples/myNewRepo$ mvn -U com.ericsson.cifwk.taf:taf-maven-plugin:archetype  \
+> -DgroupId="com.ericsson.group" \
+> -DartifactId=myNewArtifact \
+> -Dversion=1.0.1-SNAPSHOT \
+> -DparentGroupId="com.ericsson" \
+> -DparentArtifactId="master" \
+> -DparentVersion=1.2 \
+> -DcxpNumber=CXP88888888
+[INFO] Scanning for projects...
+Downloading: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/groups/public/com/ericsson/cifwk/taf/taf-maven-plugin/maven-metadata.xml
+Downloaded: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/groups/public/com/ericsson/cifwk/taf/taf-maven-plugin/maven-metadata.xml (15 KB at 17.0 KB/sec)
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- taf-maven-plugin:2.3.144:archetype (default-cli) @ standalone-pom ---
+[INFO] Generating project in Interactive mode
+[INFO] No archetype defined. Using maven-archetype-quickstart (org.apache.maven.archetypes:maven-archetype-quickstart:1.0)
+Choose archetype:
+1: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.oss.itpf.sdk.archetypes:service-framework-war-archetype (-)
+2: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.archetypes:service-framework-ear-archetype (-)
+3: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.oss.itpf.sdk.archetypes:service-framework-ear-archetype (-)
+4: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.mediation:mediation-set-archetype (-)
+5: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.mediation:mediation-contribution-archetype (-)
+6: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.mediation:mediation-component-archetype (-)
+7: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.mediation:mediation-model-archetype (-)
+8: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.litp:litp-extension-archetype (-)
+9: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.cds:cds-archetype (-)
+10: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.mediation:event-handler-archetype (-)
+11: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.archetypes:sonpm-componnent-archetype (-)
+12: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.archetypes:service-framework-war-archetype (-)
+13: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.mediation:helloworld-handler-archetype (-)
+14: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.nms.mediation:helloworld-flow-archetype (-)
+15: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.oss:ci_execution_sample_archetype (-)
+16: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/repositories/releases/archetype-catalog.xml -> com.ericsson.cifwk:taf-archetype (-)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : 16
+Choose com.ericsson.cifwk:taf-archetype version:
+1: 2.2.1
+2: 3.0.1
+3: 3.0.2
+4: 3.0.3
+Choose a number: 4: 4
+Downloading: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/groups/public/com/ericsson/cifwk/taf-archetype/3.0.3/taf-archetype-3.0.3.jar
+Downloaded: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/groups/public/com/ericsson/cifwk/taf-archetype/3.0.3/taf-archetype-3.0.3.jar (7 KB at 19.1 KB/sec)
+Downloading: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/groups/public/com/ericsson/cifwk/taf-archetype/3.0.3/taf-archetype-3.0.3.pom
+Downloaded: https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/groups/public/com/ericsson/cifwk/taf-archetype/3.0.3/taf-archetype-3.0.3.pom (4 KB at 15.3 KB/sec)
+[INFO] Using property: groupId = com.ericsson.group
+[INFO] Using property: artifactId = myNewArtifact
+[INFO] Using property: version = 1.0.1-SNAPSHOT
+[INFO] Using property: package = com.ericsson.group
+[INFO] Using property: taf_ = sdk:[ all | assure | ossrc | tor ]
+Define value for property 'taf_sdk': : all
+Confirm properties configuration:
+groupId: com.ericsson.group
+artifactId: myNewArtifact
+version: 1.0.1-SNAPSHOT
+package: com.ericsson.group
+taf_: sdk:[ all | assure | ossrc | tor ]
+taf_sdk: all
+ Y: : Y
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: taf-archetype:3.0.3
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.ericsson.group
+[INFO] Parameter: artifactId, Value: myNewArtifact
+[INFO] Parameter: version, Value: 1.0.1-SNAPSHOT
+[INFO] Parameter: package, Value: com.ericsson.group
+[INFO] Parameter: packageInPathFormat, Value: com/ericsson/group
+[INFO] Parameter: package, Value: com.ericsson.group
+[INFO] Parameter: version, Value: 1.0.1-SNAPSHOT
+[INFO] Parameter: groupId, Value: com.ericsson.group
+[INFO] Parameter: taf_sdk, Value: all
+[INFO] Parameter: artifactId, Value: myNewArtifact
+[INFO] Parameter: taf_, Value: sdk:[ all | assure | ossrc | tor ]
+[INFO] Parent element not overwritten in /home/ejohlyn/jj/TAF/MyUserStories/CIP-6326/temp/run1/myNewArtifact/ERICTAFmodulename_operators/pom.xml
+[INFO] Parent element not overwritten in /home/ejohlyn/jj/TAF/MyUserStories/CIP-6326/temp/run1/myNewArtifact/ERICTAFmodulename_CXPxxxxxxxx/pom.xml
+[INFO] Parent element not overwritten in /home/ejohlyn/jj/TAF/MyUserStories/CIP-6326/temp/run1/myNewArtifact/test-pom-myNewArtifact/pom.xml
+[INFO] project created from Archetype in dir: /home/ejohlyn/jj/TAF/MyUserStories/CIP-6326/temp/run1/myNewArtifact
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 40.256s
+[INFO] Finished at: Tue Oct 07 20:16:45 IST 2014
+[INFO] Final Memory: 20M/216M
+[INFO] ------------------------------------------------------------------------
+~/00_temp/repos/throwawayexamples/myNewRepo$
+----

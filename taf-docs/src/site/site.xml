@@ -1,0 +1,128 @@
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+    <bannerLeft>
+        <name>TAF User Documentation</name>
+    </bannerLeft>
+
+    <publishDate position="right"/>
+    <version position="none"/>
+
+    <bannerRight>
+        <src>images/logo/taf_logo.png</src>
+    </bannerRight>
+
+    <body>
+        <menu name="Introduction">
+            <item name="Introduction" href="/index.html"/>
+            <item name="What is TAF?" href="introduction/what-is-taf.html"/>
+            <item name="Why use TAF?" href="introduction/why-taf.html"/>
+        </menu>
+        <menu name="TAF Test Management">
+            <item name="Introduction" href="taf_test_management/introduction.html"/>
+            <item name="Why use TAF TM?" href="taf_test_management/why-use-taf-tm.html"/>
+            <item name="Creating Test Case" href="taf_test_management/creating-test-case.html"/>
+        </menu>
+        <menu name="TAF Concepts">
+            <item name="TAF Operators" href="taf_concepts/taf-operators.html"/>
+            <item name="TAF Configuration" href="taf_concepts/taf-configuration.html"/>
+            <item name="Data-Driven Testing" href="taf_concepts/data-driven-testing.html"/>
+            <item name="Dependency Injection" href="taf_concepts/dependency-injection.html"/>
+            <item name="TAF Asserts" href="taf_concepts/taf-asserts.html"/>
+            <item name="TAF Scenarios" href="taf_concepts/taf-scenarios.html" collapse="true">
+                <item name="Scenarios" href="taf_concepts/taf_scenarios/index.html"/>
+                <item name="Basic Data Concepts" href="taf_concepts/taf_scenarios/basic_data_concepts.html"/>
+                <item name="Data Record" href="taf_concepts/taf_scenarios/data_record.html"/>
+                <item name="Test Steps" href="taf_concepts/taf_scenarios/test_steps.html"/>
+                <item name="Flow" href="taf_concepts/taf_scenarios/flow.html"/>
+                <item name="Building a Scenario Test" href="taf_concepts/taf_scenarios/building_scenario_test.html"/>
+                <item name="Runner" href="taf_concepts/taf_scenarios/runner.html"/>
+                <item name="Extending Scenarios" href="taf_concepts/taf_scenarios/extending_scenarios.html"/>
+                <item name="Vusers" href="taf_concepts/taf_scenarios/vusers.html"/>
+                <item name="Manipulating Data" href="taf_concepts/taf_scenarios/manipulating_data.html"/>
+                <item name="Performance Testing Using Scenarios" href="taf_concepts/taf_scenarios/performance_testing.html"/>
+                <item name="Scenario Debug" href="taf_concepts/taf_scenarios/debug.html"/>
+            </item>
+        </menu>
+        <menu name="Tools">
+            <item name="TAF UI" href="tools/taf-ui-sdk.html"/>
+            <item name="TAF Performance" href="tools/taf-performance.html"/>
+            <item name="HTTP Tool" href="https://taf.seli.wh.rnd.internal.ericsson.com/http-tool/"/>
+            <item name="Cli Tool" href="https://taf.seli.wh.rnd.internal.ericsson.com/cli-tool"/>
+            <item name="CLICommandHelper" href="tools/cli-command-helper.html"/>
+            <item name="CLI API" href="tools/cli-api.html"/>
+        </menu>
+        <menu name="Handlers and Executors">
+            <item name="TAF Data Handler" href="handlers_and_executors/taf_data_handler.html"/>
+            <item name="JBOSS Handler" href="handlers_and_executors/jboss_handler.html"/>
+            <item name="AS RMI Handler" href="handlers_and_executors/as_rmi_handler.html"/>
+            <item name="NetSim Command Handler" href="handlers_and_executors/netsim_command_handler.html"/>
+            <item name="JMS Handler" href="handlers_and_executors/jms_handler.html"/>
+            <item name="JMX Handler" href="handlers_and_executors/jmx_handler.html"/>
+            <item name="Remote File Handler" href="handlers_and_executors/remote_file_handler.html"/>
+            <item name="Remote Object Handler" href="handlers_and_executors/remote_object_handler.html"/>
+            <item name="JBoss Command Executor" href="handlers_and_executors/jboss_command_executor.html"/>
+            <item name="Local Command Executor" href="handlers_and_executors/local_command_executor.html"/>
+        </menu>
+        <menu name="Utilities">
+            <item name="TAF Archetype" href="utilities/taf-archetype.html"/>
+            <item name="TAF Maven Plugin" href="utilities/taf-maven-plugin.html"/>
+        </menu>
+        <menu name="Recommendations">
+            <item name="What Assertion Framework should I use" href="recommendations/assertion-fwks.html"/>
+        </menu>
+        <menu name="How Tos">
+            <item name="How to use SSH tunnel to environment" href="how_tos/ssh_tunnel_to_environment.html"/>
+            <item name="TAF connecting to environment inside cloud vApp" href="how_tos/environment_inside_cloud_vApp.html"/>
+            <item name="How to provide test results from other sources" href="how_tos/test_results_from_other_sources.html"/>
+            <item name="Adding files to test report" href="how_tos/adding_file_to_test_report.html"/>
+            <item name="TAF runtime control by stopping one version when starting new" href="how_tos/taf_runtime_control.html"/>
+            <item name="How to make sure you're not creating too many threads" href="how_tos/taf_thread_count_control.html"/>
+            <item name="Migrating from SshRemoteCommandExecutor (Deprecated) to CLICommandHelper" href="how_tos/migrating_from_sshRemoteCommandExecutor_to_ClICommandHelper.html"/>
+            <item name="TAF mvn command line parameters" href="how_tos/taf_maven_command_line_parameters.html"/>
+            <item name="Logging" href="how_tos/logging.html"/>
+            <item name="Setting a timeout on a test case" href="how_tos/testcase_timeout.html"/>
+            <item name="Generate and view Allure reports" href="how_tos/generate_and_view_allure_reports.html"/>
+        </menu>
+        <menu name="TAF Examples">
+            <item name="TAF Operator Examples" href="taf-examples/api-cli-rest-ui-operator-examples.html"/>
+            <item name="Jboss handler code snippet" href="taf-examples/jboss-handler-code-snippet.html"/>
+            <item name="Code snippet for using properties" href="taf-examples/code-snippet-for-using-properties.html"/>
+        </menu>
+        <menu name="Learning">
+            <item name="TAF Koans" href="learning/koans.html"/>
+        </menu>
+        <menu name="Appendix A:">
+            <item name="How to Contribute documentation" href="appendix/contributing.html"/>
+        </menu>
+        <menu name="Appendix B: Useful guides not under TAF Umbrella">
+            <item name="TAF Environment Setup" href="appendix/taf-enviornment.html"/>
+            <item name="Setting up Jenkins to use HTML Publisher Plugin" href="appendix/setting-up-jenkins-to-use-html-publisher-plugin.html"/>
+            <item name="Setting up your TAF project to log to PDUOSS Test Statistics Database" href="appendix/setting-up-your-taf-project-to-log-to-pduoss-test-statistics-database.html"/>
+            <item name="What to do if you get an Out of Memory PermGem Exception when running TAF" href="appendix/OOM-PermGen-exception.html"/>
+            <item name="TestNG Tips and Tricks" href="appendix/testng-tips-tricks.html"/>
+            <item name="Unit testing your operator" href="appendix/unit-testing-operators.html"/>
+        </menu>
+        <menu name="TDMUsageInTafTests">
+            <item name="Introduction" href="TDM/tdmusageintaf.html"/>
+        </menu>
+    </body>
+
+    <skin>
+        <groupId>com.ericsson.cds</groupId>
+        <artifactId>ericsson-skin-stats</artifactId>
+        <version>1.0.3</version>
+    </skin>
+    <custom>
+        <uiStats>
+            <serverUrl>https://cds.ericsson.se/analytics/</serverUrl>
+            <siteId>12</siteId>
+        </uiStats>
+        <search>
+            <url>http://atclvm1170.athtem.eei.ericsson.se:8080/search/#searchapp</url>
+        </search>
+        <fluidoSkin>
+            <sourceLineNumbersEnabled>false</sourceLineNumbersEnabled>
+        </fluidoSkin>
+    </custom>
+</project>

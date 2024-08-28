@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+    <bannerLeft>
+        <name>TAF Performance User Guide</name>
+    </bannerLeft>
+
+    <publishDate position="right"/>
+    <version position="none"/>
+
+    <bannerRight>
+        <src>images/perf_logo.png</src>
+    </bannerRight>
+
+    <body>
+        <links>
+            <item name="TAF user docs" href="https://taf.seli.wh.rnd.internal.ericsson.com/"/>
+        </links>
+
+        <menu name="TAF Performance module overview">
+            <item name="Introduction" href="/index.html"/>
+            <item name="Technology stack" href="/overview/technology_stack.html"/>
+            <item name="Solutions" href="/overview/solutions.html" collapse="true">
+                <item name="OLAP Analytics" href="/overview/solutions/olap_analytics.html"/>
+                <item name="Real time analytics" href="/overview/solutions/realtime_analytics.html"/>
+                <item name="Diagnostic Data Collection" href="/overview/solutions/ddc.html"/>
+                <item name="Metrics Builder" href="/overview/solutions/metrics_builder.html"/>
+                <item name="Scenarios" href="https://taf.seli.wh.rnd.internal.ericsson.com/scenarios/snapshot/index.html"/>
+                <item name="Data Sources" href="/overview/solutions/data_sources.html"/>
+                <item name="Headless UI Testing" href="/overview/solutions/headless_ui_testing.html"/>
+                <item name="HAR Capture" href="/overview/solutions/http_archive_capture_overview.html"/>
+            </item>
+        </menu>
+
+        <menu name="Environment">
+            <item name="Set-up" href="/environment/environment_set_up.html" collapse="true"/>
+        </menu>
+
+        <menu name="OLAP Analytics with Saiku">
+            <item name="Saiku use" href="/saiku/saiku_use.html"/>
+            <item name="FAQ" href="/saiku/saiku_faq.html"/>
+            <item name="Installation" href="/saiku/saiku_install.html"/>
+            <item name="Complete User Guide" href="http://wiki.meteorite.bi/display/SAIK/Using+Saiku"/>
+        </menu>
+
+        <menu name="Realtime Analytics with Grafana">
+            <item name="Grafana use" href="/grafana/grafana_use.html"/>
+            <item name="FAQ" href="/grafana/grafana_faq.html"/>
+            <item name="Installation" href="/grafana/grafana_install.html"/>
+            <item name="Grafana and DDC" href="/grafana/grafana_ddc.html"/>
+            <item name="Complete User Guide" href="http://docs.grafana.org/guides/basic_concepts/"/>
+        </menu>
+
+        <menu name="Metrics builder">
+            <item name="User Cases" href="/metrics-builder/metrics_builder.html"/>
+            <item name="Using Metrics Builder" href="/metrics-builder/using_metrics_builder.html"/>
+        </menu>
+
+        <menu name="HAR">
+            <item name="HAR Capture" href="/har/http_archive_capture.html"/>
+        </menu>
+        <menu name="Headless UI Testing">
+            <item name="Prerequisites" href="/ui-tests/ui_testing_prerequisites.html"/>
+            <item name="TAF UI SDK use" href="/ui-tests/ui_testing_using_taf_sdk.html"/>
+            <item name="FAQ" href="/ui-tests/ui_testing_faq.html"/>
+        </menu>
+        <menu name="Scenarios">
+            <item name="User documentation" href="https://taf.seli.wh.rnd.internal.ericsson.com/scenarios/snapshot/index.html"/>
+            <item name="FAQ" href="/scenarios/scenario_testing_faq.html"/>
+        </menu>
+        <menu name="Data Sources">
+            <item name="User documentation" href="https://taf.seli.wh.rnd.internal.ericsson.com/scenarios/snapshot/index.html#_basic_data_concepts"/>
+            <item name="FAQ" href="/data_sources/data_sources_faq.html"/>
+        </menu>
+        <menu name="Good performance tests">
+            <item name="Do's and Don'ts" href="/good_performance_tests/dos.html"/>
+            <item name="Example" href="/good_performance_tests/examples.html"/>
+        </menu>
+        <menu name="Advanced Developer Section">
+            <item name="Set-up using puppet" href="/advanced_developer/environment_set_up_using_puppet.html"/>
+            <item name="Set-up using scripts" href="/advanced_developer/environment_set_up_using_scripts.html"/>
+            <item name="Configuring Environment" href="/advanced_developer/environment_configuration.html"/>
+        </menu>
+    </body>
+
+    <skin>
+        <groupId>com.ericsson.cds</groupId>
+        <artifactId>ericsson-skin-stats</artifactId>
+        <version>1.0.3</version>
+    </skin>
+    <custom>
+        <uiStats>
+            <serverUrl>https://cds.ericsson.se/analytics/</serverUrl>
+            <siteId>12</siteId>
+        </uiStats>
+        <search>
+            <url>http://atclvm1170.athtem.eei.ericsson.se:8080/search/#searchapp</url>
+        </search>
+        <fluidoSkin>
+            <sourceLineNumbersEnabled>false</sourceLineNumbersEnabled>
+        </fluidoSkin>
+    </custom>
+</project>

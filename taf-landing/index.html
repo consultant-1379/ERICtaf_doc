@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Automation Framework..</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/icon.css">
+
+    <!--Compiled and minified JS-->
+    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!--Custom styles-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="shortcut icon" type="image/png" href="tafLanding_images/taf_logo.png"/>
+</head>
+<body>
+
+<header>
+    <nav class="grey lighten-5" role="navigation">
+        <div class="ebSystemBar">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo  taf-color-text">
+                    <img href="#" class="eaNav-Icon left" src="img/logo.png">
+                    Test Automation Framework</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container eaMain">
+        <div class="row center eaMain-TafLogo-container">
+            <img href="#" class="eaMain-TafLogo-img" src="img/taflogo.png">
+        </div>
+        <div class="row center">
+            <h5 class="header col s12 taf-color-text">A framework for full end-to-end test case automation. </br>
+                <span class="hide-on-small-only">Ensures the maintainability and scalability of your software with automated feature and performance testing tailored to Ericsson technology</span></h5>
+        </div>
+        <div class="row center">
+            <a href="doc/TAF_Overview.html" class="waves-effect waves-light btn-large  indigo darken-4">What is TAF</a>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/taf_core_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">TAF Core</span>
+                        <p> Latest Recommended Release: 2.76.1 </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/userdocs/Latest/index.html" class="light-blue-text lighten-1">User Guide</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/apidocs/Latest/index.html" class="light-blue-text lighten-1">JavaDoc</a></br>
+                        <a href="https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.cifwk/ERICtaf_util" class="light-blue-text lighten-1">Repository</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/tafreleases/changelog.html" class="light-blue-text lighten-1">Changelog</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/userdocs/Latest/TDM/tdmusageintaf.html" class="light-blue-text lighten-1">TDM Usage in TAF tests</a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            TAF Core is the main framework for test automation
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/taf_tool_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">TAF Tools</span>
+                        <p>&nbsp</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/cli-tool" class="light-blue-text lighten-1">CLI Tool</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/http-tool" class="light-blue-text lighten-1">Http Tool</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/ui-test-toolkit/" class="light-blue-text lighten-1">UI Test Toolkit</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/scenarios-rx/" class="light-blue-text lighten-1">Scenario RX</a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            TAF tools is auxiliary tools for the test automation
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/tms_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">Test Management System</span>
+                        <p> Latest Release: 2.15.25 </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://taftm.seli.wh.rnd.internal.ericsson.com//#help/app/tm" class="light-blue-text lighten-1">User Guide</a></br>
+                        <a href="https://taftm.seli.wh.rnd.internal.ericsson.com//login/#tm" class="light-blue-text lighten-1">TMS App</a></br>
+                        <a href="https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.cifwk/ERICtaf_tm" class="light-blue-text lighten-1">Repository</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/tmsrelease/changelog.html" class="light-blue-text lighten-1">Changelog</a></br>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            TAF Test Management System (TAF TMS) has the purpose of managing test cases, ensuring all product requirements are being
+                            covered by traceable test cases. It allows test case definition, metadata association, test case grouping and filtering
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/te_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">Test Executor</span>
+                        <p> Latest Release: 2.66.1 </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/tedocs/latest/index.html" class="light-blue-text lighten-1">User Guide</a></br>
+                        <a href="https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.cifwk/ERICtaf_te" class="light-blue-text lighten-1">Repository</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/tereleases/changelog.html" class="light-blue-text lighten-1">Changelog</a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            TAF Test Executor (TE) is a distributed system for test schedule running and reporting
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/reporting_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">Test Reporting</span>
+                        <p>Latest Release: 3.3.32</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://confluence-oss.seli.wh.rnd.internal.ericsson.com/display/TAF/Demos" class="light-blue-text lighten-1">User Guide</a></br>
+                        <a href="https://trs-prod.seli.wh.rnd.internal.ericsson.com/#/login" class="light-blue-text lighten-1">Reporting App</a></br>
+                        <a href="https://confluence-oss.seli.wh.rnd.internal.ericsson.com/pages/viewpage.action?pageId=173712663" class="light-blue-text lighten-1">Repository</a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            A system that provides historical storage of all test ware executed via the TAF Test Executor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/tdm_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">Test Data Management</span>
+                        <p>
+                            Latest Release: 1.0.129
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://taf-tdm-prod.seli.wh.rnd.internal.ericsson.com/#/documentation/overview" class="light-blue-text lighten-1">User Guide</a></br>
+                        <a href="https://taf-tdm-prod.seli.wh.rnd.internal.ericsson.com/#/login" class="light-blue-text lighten-1">TDM App</a></br>
+                        <a href="https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.cifwk.taf.testdatamanagement/ERICtaf_tdm" class="light-blue-text lighten-1">Repository</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/tdmrelease/changelog.html" class="light-blue-text lighten-1">Changelog</a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            Test Data Management is a web application for managing Data Sources for TAF Data-Driven Testing
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/allure.png" class="activator">
+                        </div>
+                        <span class="card-title activator">Allure Service</span>
+                        <p>&nbsp</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/Allure-Service/" class="light-blue-text lighten-1">User Guide</a></br>
+                        <a href="https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.de/allure-service" class="light-blue-text lighten-1">Repository</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/allure-release/changelog.html" class="light-blue-text lighten-1">Changelog</a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            TAF Allure Service allows users to generate allure reports via a rest api.
+                            This provides the user with an easy way to generate a report and also combine reports.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/performance_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">TAF Performance</span>
+                        <p>&nbsp</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/performance/snapshot/index.html" class="light-blue-text lighten-1">User Guide</a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            TAF Performance module provides a convenient way to develop performance and load tests, execute them against SUT and
+                            analyze the results, by bringing together a set of tools and providing integration between these instruments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/stackOverflow_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">TAF StackOverflow</span>
+                        <p>&nbsp</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://taf-stackoverflow.seli.wh.rnd.internal.ericsson.com/" class="light-blue-text lighten-1">TAF StackOverflow</a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            TAF StackOverflow is where you can ask questions and receive answers from other members of the community
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/training_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">TAF Training</span>
+                        <p>
+                            Latest Release: 2.42.1
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://confluence-oss.seli.wh.rnd.internal.ericsson.com/pages/viewpage.action?pageId=12657753" class="light-blue-text lighten-1">TAF Training/Workshops</a></br>
+                        <a href="https://play.ericsson.net/channel/Test%2BAutomation%2BFramework%2B%2528TAF%2529/42462431" class="light-blue-text lighten-1">TAF Ericsson Play channel</a></br>
+                        <a href="https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.cifwk/ERICtaf_examples" class="light-blue-text lighten-1">Examples project repo</a></br>
+                        <a href="https://taf.seli.wh.rnd.internal.ericsson.com/userdocs/Latest/learning/koans.html" class="light-blue-text lighten-1">TAF Koans</a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            Here you will find links to our TAF Training materials.
+                            It is recommended to participate in the TAF Training course if you are a beginner with TAF
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable eaCard">
+                    <div class="card-content taf-color-text">
+                        <i class="material-icons right activator help">help</i>
+                        <div class="row center eaCard-icon">
+                            <img src="img/qa_icon.png" class="activator">
+                        </div>
+                        <span class="card-title activator">TAF Support</span>
+                        <p>
+                            Latest Release: 2.42.1
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://jira-oss.seli.wh.rnd.internal.ericsson.com/secure/RapidBoard.jspa?rapidView=2587&projectKey=CIS" class="light-blue-text lighten-1">TAF Support Board</a></br>
+                        <a href="https://confluence-oss.seli.wh.rnd.internal.ericsson.com/display/TAF/TAF-Users+Mail+List" class="light-blue-text lighten-1">User Mail List</a></br>
+                        <a href="https://confluence-oss.seli.wh.rnd.internal.ericsson.com/pages/viewpage.action?spaceKey=TAF&title=TAF+Test+Ware+Design+Rules" class="light-blue-text lighten-1">Testware Design Rules</a></br>
+                        <a href="javascript:void(0)" class="light-blue-text lighten-1"></a></br>
+                    </div>
+
+                    <div class="card-reveal">
+                        <span class="card-title taf-color-text">Description<i class="material-icons right">close</i></span>
+                        <p>
+                            TAF support can be requested in various ways, whether it be a support ticket on our support board or a question on our TAF
+                            stack overflow page/TAF user mailing list
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="page-footer grey lighten-5">
+    <div class="footer-copyright">
+        <div class="container taf-color-text">
+            Contact the Team: <a href="mailto:hyderabad.ericssontaf@tcs.com">TAF Team Email</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

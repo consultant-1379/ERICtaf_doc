@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SampleTransaction">
+    <parameter name="taf.start-delay" value="10"/>
+    <parameter name="taf.repeat-count" value="5"/>
+    <parameter name="taf.repeat-until" value="10000"/>
+    <parameter name="taf.think-time" value="100"/>
+    <test name="SampleTransaction" preserve-order="true">
+        <classes>
+            <class name="...">
+                ...
+            </class>
+        </classes>
+    </test>
+</suite>

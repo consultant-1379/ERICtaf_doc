@@ -1,0 +1,4 @@
+user,password,result
+exyzzyx,password,OK
+root,hello,FAIL
+exyzzyx,wrong,FAIL
